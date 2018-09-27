@@ -1,0 +1,765 @@
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.75   Longitude -69.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 725.59 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.30              1.71
+1983 07 02              3.76              2.44
+1983 07 03              2.84              1.54
+1983 07 04              4.98              1.86
+1983 07 05              3.29              2.32
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.75   Longitude -69.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 679.26 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.04              1.71
+1983 07 02              3.82              2.44
+1983 07 03              2.55              1.54
+1983 07 04              4.65              1.86
+1983 07 05              3.30              2.32
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.75   Longitude -68.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 700.69 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              4.59              1.57
+1983 07 02              3.48              2.29
+1983 07 03              2.35              1.56
+1983 07 04              4.26              1.46
+1983 07 05              3.01              2.12
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.75   Longitude -68.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 670.37 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.04              1.57
+1983 07 02              3.85              2.29
+1983 07 03              2.94              1.56
+1983 07 04              4.80              1.46
+1983 07 05              3.40              2.12
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.75   Longitude -67.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 498.01 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.85              1.31
+1983 07 02              5.06              2.47
+1983 07 03              4.03              1.65
+1983 07 04              6.10              1.49
+1983 07 05              4.81              2.25
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.75   Longitude -67.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 334.32 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.41              1.31
+1983 07 02              6.16              2.47
+1983 07 03              4.90              1.65
+1983 07 04              7.09              1.49
+1983 07 05              6.10              2.25
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.75   Longitude -66.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 248.37 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.68              1.37
+1983 07 02              6.67              2.56
+1983 07 03              5.50              1.83
+1983 07 04              7.55              1.69
+1983 07 05              6.49              2.30
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.75   Longitude -66.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 227.66 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.97              1.37
+1983 07 02              7.03              2.56
+1983 07 03              6.03              1.83
+1983 07 04              7.99              1.69
+1983 07 05              6.55              2.30
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.75   Longitude -65.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 169.38 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              7.27              0.81
+1983 07 02              7.51              2.56
+1983 07 03              6.19              2.17
+1983 07 04              8.26              1.60
+1983 07 05              6.98              2.23
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.25   Longitude -69.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 790.02 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.79              1.71
+1983 07 02              4.26              2.44
+1983 07 03              3.28              1.54
+1983 07 04              5.97              1.86
+1983 07 05              3.81              2.32
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.25   Longitude -69.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 590.71 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.34              1.71
+1983 07 02              5.31              2.44
+1983 07 03              3.88              1.54
+1983 07 04              6.78              1.86
+1983 07 05              4.92              2.32
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.25   Longitude -68.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 506.36 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.96              1.57
+1983 07 02              5.25              2.29
+1983 07 03              4.19              1.56
+1983 07 04              6.61              1.46
+1983 07 05              5.27              2.12
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.25   Longitude -68.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 498.69 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.07              1.57
+1983 07 02              5.37              2.29
+1983 07 03              4.31              1.56
+1983 07 04              6.63              1.46
+1983 07 05              5.23              2.12
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.25   Longitude -67.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 403.17 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.47              1.31
+1983 07 02              6.15              2.47
+1983 07 03              4.97              1.65
+1983 07 04              7.43              1.49
+1983 07 05              5.95              2.25
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.25   Longitude -67.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 309.81 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.71              1.31
+1983 07 02              7.03              2.47
+1983 07 03              5.52              1.65
+1983 07 04              8.08              1.49
+1983 07 05              6.81              2.25
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.25   Longitude -66.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 258.03 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.96              1.37
+1983 07 02              7.48              2.56
+1983 07 03              5.99              1.83
+1983 07 04              8.30              1.69
+1983 07 05              7.15              2.30
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.25   Longitude -66.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 236.66 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              7.27              1.37
+1983 07 02              7.80              2.56
+1983 07 03              6.29              1.83
+1983 07 04              8.46              1.69
+1983 07 05              7.23              2.30
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -39.25   Longitude -65.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 187.03 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              7.44              0.81
+1983 07 02              8.02              2.56
+1983 07 03              6.32              2.17
+1983 07 04              8.50              1.60
+1983 07 05              7.66              2.23
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.75   Longitude -69.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 840.83 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.68              2.06
+1983 07 02              4.61              2.52
+1983 07 03              3.41              2.02
+1983 07 04              6.33              1.05
+1983 07 05              3.95              2.16
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.75   Longitude -69.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 620.37 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.38              2.06
+1983 07 02              5.90              2.52
+1983 07 03              4.42              2.02
+1983 07 04              7.83              1.05
+1983 07 05              5.33              2.16
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.75   Longitude -68.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 468.08 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.14              1.38
+1983 07 02              6.10              2.54
+1983 07 03              5.23              1.48
+1983 07 04              8.32              1.29
+1983 07 05              6.17              2.41
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.75   Longitude -68.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 429.48 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.62              1.38
+1983 07 02              6.53              2.54
+1983 07 03              5.39              1.48
+1983 07 04              8.35              1.29
+1983 07 05              6.29              2.41
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.75   Longitude -67.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 377.29 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.91              1.32
+1983 07 02              6.88              2.50
+1983 07 03              5.67              1.84
+1983 07 04              8.63              1.46
+1983 07 05              6.71              2.03
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.75   Longitude -67.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 322.26 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              7.18              1.32
+1983 07 02              7.56              2.50
+1983 07 03              5.90              1.84
+1983 07 04              8.92              1.46
+1983 07 05              7.50              2.03
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.75   Longitude -66.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 272.68 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              7.74              1.21
+1983 07 02              8.11              2.66
+1983 07 03              6.35              1.88
+1983 07 04              9.04              1.61
+1983 07 05              8.05              2.10
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.75   Longitude -66.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 234.34 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              8.06              1.21
+1983 07 02              8.46              2.66
+1983 07 03              6.65              1.88
+1983 07 04              8.97              1.61
+1983 07 05              8.12              2.10
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.75   Longitude -65.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 213.23 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              7.99              1.12
+1983 07 02              8.38              2.64
+1983 07 03              6.49              2.21
+1983 07 04              8.75              1.70
+1983 07 05              8.22              2.19
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.25   Longitude -69.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 858.99 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.92              2.06
+1983 07 02              5.31              2.52
+1983 07 03              4.24              2.02
+1983 07 04              7.13              1.05
+1983 07 05              4.41              2.16
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.25   Longitude -69.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 683.03 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.10              2.06
+1983 07 02              6.30              2.52
+1983 07 03              5.10              2.02
+1983 07 04              8.72              1.05
+1983 07 05              5.58              2.16
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.25   Longitude -68.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 536.86 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.61              1.38
+1983 07 02              6.49              2.54
+1983 07 03              5.69              1.48
+1983 07 04              9.75              1.29
+1983 07 05              6.57              2.41
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.25   Longitude -68.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 472.44 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.54              1.38
+1983 07 02              7.17              2.54
+1983 07 03              6.12              1.48
+1983 07 04             10.24              1.29
+1983 07 05              6.95              2.41
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.25   Longitude -67.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 395.89 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              7.29              1.32
+1983 07 02              7.67              2.50
+1983 07 03              6.35              1.84
+1983 07 04             10.12              1.46
+1983 07 05              7.47              2.03
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.25   Longitude -67.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 331.67 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              7.91              1.32
+1983 07 02              8.37              2.50
+1983 07 03              6.43              1.84
+1983 07 04              9.93              1.46
+1983 07 05              8.32              2.03
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.25   Longitude -66.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 286.58 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              8.61              1.21
+1983 07 02              8.75              2.66
+1983 07 03              6.78              1.88
+1983 07 04              9.83              1.61
+1983 07 05              8.92              2.10
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.25   Longitude -66.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 249.72 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              8.65              1.21
+1983 07 02              8.80              2.66
+1983 07 03              6.99              1.88
+1983 07 04              9.53              1.61
+1983 07 05              9.11              2.10
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -38.25   Longitude -65.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 240.65 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              8.31              1.12
+1983 07 02              8.56              2.64
+1983 07 03              6.71              2.21
+1983 07 04              9.17              1.70
+1983 07 05              8.67              2.19
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -37.75   Longitude -69.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 1025.04 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.40              1.57
+1983 07 02              4.97              2.35
+1983 07 03              4.92              1.56
+1983 07 04              7.27              0.69
+1983 07 05              3.97              2.00
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -37.75   Longitude -69.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 842.61 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.51              1.57
+1983 07 02              6.03              2.35
+1983 07 03              5.62              1.56
+1983 07 04              9.18              0.69
+1983 07 05              5.27              2.00
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -37.75   Longitude -68.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 682.44 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              5.62              2.02
+1983 07 02              6.69              2.49
+1983 07 03              6.11              1.67
+1983 07 04             10.79              1.70
+1983 07 05              6.50              2.88
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -37.75   Longitude -68.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 546.06 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              6.88              2.02
+1983 07 02              7.69              2.49
+1983 07 03              6.55              1.67
+1983 07 04             11.60              1.70
+1983 07 05              7.63              2.88
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -37.75   Longitude -67.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 422.85 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              7.95              1.87
+1983 07 02              8.49              2.72
+1983 07 03              6.91              2.04
+1983 07 04             11.33              2.18
+1983 07 05              8.48              2.69
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -37.75   Longitude -67.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 339.66 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              8.47              1.87
+1983 07 02              9.14              2.72
+1983 07 03              7.00              2.04
+1983 07 04             10.84              2.18
+1983 07 05              9.23              2.69
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -37.75   Longitude -66.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 294.56 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              8.73              1.45
+1983 07 02              9.21              2.73
+1983 07 03              7.16              1.86
+1983 07 04             10.54              1.82
+1983 07 05              9.51              2.66
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -37.75   Longitude -66.25 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 256.85 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              8.48              1.45
+1983 07 02              8.96              2.73
+1983 07 03              7.15              1.86
+1983 07 04             10.18              1.82
+1983 07 05              9.65              2.66
+-BEGIN HEADER-
+NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data 
+Dates (month/day/year): 07/01/1983 through 07/05/1983 
+Location: Latitude  -37.75   Longitude -65.75 
+Elevation from MERRA-2: Average for 1/2x1/2 degree lat/lon region = 259.74 meters   Site = na 
+Climate zone: na (reference Briggs et al: http://www.energycodes.gov) 
+Value for missing model data cannot be computed or out of model availability range: -999 
+Parameter(s): 
+ALLSKY_SFC_SW_DWN    SRB/FLASHFlux 1/2x1/2 All Sky Insolation Incident on a Horizontal Surface (kW-hr/m^2/day) 
+T2M                  MERRA2 1/2x1/2 Temperature at 2 Meters (C) 
+YEAR MO DY ALLSKY_SFC_SW_DWN     T2M
+-END HEADER-
+1983 07 01              8.21              1.37
+1983 07 02              8.64              2.83
+1983 07 03              6.88              2.05
+1983 07 04              9.82              1.83
+1983 07 05              9.04              2.72

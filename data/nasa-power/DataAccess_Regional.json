@@ -1,0 +1,35 @@
+{
+ "features": "The Regional Request tool does not return data parameters values by default in JSON format. If JSON output is required please specify JSON as the output type in your request and select the JSON file under outputs section. Please reference our API Documentation at https://power.larc.nasa.gov for more information.", 
+ "header": {
+  "api_version": "1.0.9", 
+  "endDate": "19830705", 
+  "fillValue": "-999", 
+  "startDate": "19830701", 
+  "title": "NASA/POWER SRB/FLASHFlux/MERRA2/GEOS 5.12.4 (FP-IT) 0.5 x 0.5 Degree Daily Averaged Data"
+ }, 
+ "messages": [], 
+ "outputs": {
+  "ascii": "https://power.larc.nasa.gov/downloads/POWER_Regional_Daily_19830701_19830705_bc5497ea.txt"
+ }, 
+ "parameterInformation": {
+  "ALLSKY_SFC_SW_DWN": {
+   "longname": "All Sky Insolation Incident on a Horizontal Surface", 
+   "units": "kW-hr/m^2/day"
+  }, 
+  "T2M": {
+   "longname": "Temperature at 2 Meters", 
+   "units": "C"
+  }
+ }, 
+ "time": [
+  [
+   "Main OPeNDAP Requests:", 
+   1.3469569683074951
+  ], 
+  [
+   "Total Script:", 
+   7.950959920883179
+  ]
+ ], 
+ "type": "FeatureCollection"
+}
