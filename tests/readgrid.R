@@ -20,7 +20,7 @@ library(ncdf4)
 library(ncdf4.helpers)
 library(PCICt)
 
-file <- "data/nasa-api/POWER_Global_Climatology_de741a56.nc"
+file <- "data/nasa-power/POWER_Global_Climatology_de741a56.nc"
 data <- nc_open(file)
 
 lon <- ncvar_get(data, 'lon')
@@ -42,11 +42,21 @@ attributes(data)$names
 attributes(data$var)$names
 
 # inspect the attributes of a variable
-ncatt_get(data, attributes(data$var)$names[2])
+ncatt_get(data, attributes(data$var)$names[1])
 
 # get the matrix data for a variable 
-t <- ncvar_get(data, attributes(data$var)$names[2])
+d <- ncvar_get(data, attributes(data$var)$names[1])
 
 # print the dimensions [lon, lat, time]
 dim(t)
 
+# retrieve the latitude and longitude values
+# attributes(data$dim)$names
+d_lon <- ncvar_get(data, attributes(data$dim)$names[1])
+d_lat <- ncvar_get(data, attributes(data$dim)$names[2])
+
+# make the lat and lon as headers
+dimnames(d) <- list(lon=d_lon, lat=d_lat)
+
+# get the global attributes
+attr <- ncatt_get(data, 0)
