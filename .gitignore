@@ -1,0 +1,5 @@
+/node_modules
+.RHistory
+*.json
+*.nc
+/data/nasa-power/*.nc
