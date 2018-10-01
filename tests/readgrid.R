@@ -1,26 +1,14 @@
-## Loads an R package if its already installed
-## Downloads, installs and loads an R package if its not yet installed
-## @param x: package name
-## Usage: use usepackage(<package_name>) instead of library(package_name)
-## madbarua; 20180927
-usepackage <- function(x) {
-  if (!is.element(x, installed.packages()[,1]))
-    install.packages(x, dep = TRUE)
-  require(x, character.only = TRUE)
-}
+source("../lib/usepackage.R")
 
-
-usepackage('RColorBrewer')
-usepackage('lattice')
-usepackage('ncdf')
-
+## Experimental script for reading and parsing grided ncdf files
+## ciatph; 20181001
 # ------------------------------
 
-library(ncdf4)
-library(ncdf4.helpers)
-library(PCICt)
+usepackage('ncdf4')
+usepackage('ncdf4.helpers')
+usepackage('PCICt')
 
-file <- "data/nasa-power/POWER_Global_Climatology_de741a56.nc"
+file <- "POWER_Global_Climatology_9244a20e.nc"
 data <- nc_open(file)
 
 lon <- ncvar_get(data, 'lon')
