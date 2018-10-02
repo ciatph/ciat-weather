@@ -8,9 +8,36 @@ var fs = require('fs');
 var spawn = require('child_process').spawn;
 
 
+// solar ratiation parameters
+var solar_radiation = ['SI_EF_MAX_OPTIMAL,SI_EF_MAX_OPTIMAL_ANG,SI_EF_MAX_TILTED_ANG_ORT',
+	'SI_EF_MIN_OPTIMAL,SI_EF_MIN_OPTIMAL_ANG,SI_EF_MIN_TILTED_ANG_ORT',
+	'SI_EF_OPTIMAL,SI_EF_OPTIMAL_ANG,SI_EF_TILTED_ANG_ORT'];
+
+// parameters: humidity, precipitation, temperature_min_max, wind_speed
+var weather_vars = ['QV2M,RH2M,PRECTOT',
+	'TQV,T10M_MIN,T2M_MIN',
+	'TS_MIN,T10M_MAX,T2M_MAX',
+	'TS_MAX,WS10M,WS10M_MAX',
+	'WS10M_MIN,WS10M_RANGE,WS2M',
+	'WS2M_MAX,WS2M_MIN,WS2M_RANGE',
+	'WS50M,WS50M_MAX,WS50M_MIN',
+	'WS50M_RANGE,WSC'];
+	
+var params = solar_radiation[0];	
+
+
 // API URL 
 // TO=DO: Fetch 'parameters' from dynamic input or file
+// var FILE_URL = 'https://power.larc.nasa.gov/cgi-bin/v1/DataAccess.py?request=execute&identifier=Global&parameters=T2M,ALLSKY_SFC_SW_DWN,PS&userCommunity=AG&tempAverage=CLIMATOLOGY&outputList=NETCDF&user=anonymous';
+
+var FILE_URL = 'https://power.larc.nasa.gov/cgi-bin/v1/DataAccess.py?request=execute&identifier=Global&parameters=' + 
+	params[2] + 
+	'&userCommunity=AG&tempAverage=CLIMATOLOGY&outputList=NETCDF&user=anonymous';
+	
 var FILE_URL = 'https://power.larc.nasa.gov/cgi-bin/v1/DataAccess.py?request=execute&identifier=Global&parameters=T2M,ALLSKY_SFC_SW_DWN,PS&userCommunity=AG&tempAverage=CLIMATOLOGY&outputList=NETCDF&user=anonymous';
+	
+	
+console.log(FILE_URL);
 
 // Data folder
 var FILE_DATA_PATH = 'data/nasa-power'
