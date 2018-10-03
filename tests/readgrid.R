@@ -1,4 +1,4 @@
-source("../lib/usepackage.R")
+source(paste0(getwd(), "/lib/usepackage.R"))
 
 ## Experimental script for reading and parsing grided ncdf files
 ## ciatph; 20181001
@@ -8,7 +8,12 @@ usepackage('ncdf4')
 usepackage('ncdf4.helpers')
 usepackage('PCICt')
 
-file <- "POWER_Global_Climatology_9244a20e.nc"
+# data path and file name of NCDF file
+file_path <- "/data/nasa-power/"
+file_name <- "POWER_Global_Climatology_1edb96c5.nc"
+print(paste0(getwd(), file_path, file_name))
+
+file <- paste0(getwd(), file_path, file_name)
 data <- nc_open(file)
 
 lon <- ncvar_get(data, 'lon')
@@ -18,19 +23,25 @@ summary(lon)
 summary(lat)
 
 # display time units
-data$dim$time$units
-data$dim$time$calendar
+t_units <- data$dim$time$units
+t_calendar <- data$dim$time$calendar
+print(paste("--TIME Units", t_units))
+print(paste("--TIME Calendar", t_calendar))
 
 # ------------------------------
 
 # print variables
-attributes(data)$names
+variables <- attributes(data)$names
+print(paste("--variables", variables))
+
 
 # print variable names
-attributes(data$var)$names
+var_names <- attributes(data$var)$names
+print(paste("--VARIABLE NAMES", var_names))
 
 # inspect the attributes of a variable
-ncatt_get(data, attributes(data$var)$names[1])
+var_attr <- ncatt_get(data, attributes(data$var)$names[1])
+print(paste("--attributes of variable #1", var_attr))
 
 # get the matrix data for a variable 
 d <- ncvar_get(data, attributes(data$var)$names[1])
@@ -47,4 +58,8 @@ d_lat <- ncvar_get(data, attributes(data$dim)$names[2])
 dimnames(d) <- list(lon=d_lon, lat=d_lat)
 
 # get the global attributes
-attr <- ncatt_get(data, 0)
+g_attr <- ncatt_get(data, 0)
+print(paste("--GLOBAL ATTRIBUTES", g_attr))
+
+# print contents
+head(d)

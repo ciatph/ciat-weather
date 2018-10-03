@@ -23,7 +23,10 @@ Initiates the download of the default json file and its  and its NCDF file conte
 Initiates the download of the default json file and its NCDF file content using **NodeJS** (NodeJS must have been installed in your PC).
 
 5. **/tests/readgrid.R** <br>
-Experimental script for reading and parsing gridded data set (NETCDF files).
+Experimental script for reading and parsing gridded data set (NETCDF files). <br>
+	- Open RStudio, set the working directory `setwd()` to the cloned project directory.
+	- Set the `NCDF` filename `file_name` inside the script.
+	- Run `source("tests/readgrid.R")` from the RStudio console
 
 6. **/lib/usepackage.R** <br>
 R utility script that loads an R package if its already installed. Downloads, installs and loads an R package if its not yet installed. <br>
