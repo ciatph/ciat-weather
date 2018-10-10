@@ -95,7 +95,7 @@ Daily Data contains daily values for each parameter on the specified date range 
 
 	See *POWER\_Regional\_Daily_19830701\_19840701\_92f8e4b0.txt* <br> (773KB)
 
-	`lonlat` cannot be set to the world's bounding box `(-180, -90, 180, 90)`. _**Max bounding box is 10 x 10 degrees of 1/2 x 1/2 degree data, i.e., 100 points maximum in total.**_
+	`lonlat` cannot be set to the world's bounding box `(-180, 90, 180, -90)`. _**Max bounding box is 10 x 10 degrees of 1/2 x 1/2 degree data, i.e., 100 points maximum in total.**_
 
 		https://power.larc.nasa.gov/cgi-bin/v1/DataAccess.py?request=execute&identifier=Regional&parameters=T2M,ALLSKY_SFC_SW_DWN&startDate=19830701&endDate=19840701&userCommunity=AG&tempAverage=DAILY&outputList=ASCII&bbox=-40,-70,-38,-66&user=anonymous
 
