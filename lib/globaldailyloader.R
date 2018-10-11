@@ -8,7 +8,8 @@
 
 
 ## Libraries and dependencies
-source("usepackage.R")
+source("lib/usepackage.R")
+usepackage('dplyr')
 usepackage('nasapower')
 
 
@@ -17,7 +18,9 @@ usepackage('nasapower')
 # Usage: d <- dataloader()
 #        d$set(10, 8, 2)
 #        d$load()
-dataloader <- function(length_x = 10, length_y = 8, steps = 2, data = NULL){
+dataloader <- function(max_lon = 10, max_lat = 8, steps = 2, 
+                       lons = c(), lats = c(), numcols = 0, numlats = 0,
+                       bbox = c(), temp_bbox = c(), print = FALSE, data = NULL){
 
   # Get the incremental indices from +/- max (start) to +/- max (end)
   # max: maximum start/end
@@ -38,7 +41,7 @@ dataloader <- function(length_x = 10, length_y = 8, steps = 2, data = NULL){
   # @param length_x: length of (positive) side of the x axis
   # @param length_y: length of (positive) side of the y axis
   # @param steps: interval values to increment/decrement the length_x and length_y
-  set <- function(length_x = 10, length_y = 8, steps = 2, numrows = 0, numcols = 0, data = NULL){
+  set <- function(length_x = 10, length_y = 8, inc = 2){
     # base length of logitude (columns)
     max_lon <<- length_x
     
@@ -46,7 +49,7 @@ dataloader <- function(length_x = 10, length_y = 8, steps = 2, data = NULL){
     max_lat <<- length_y 
     
     # cell increments
-    inc <<- steps 
+    steps <<- inc 
     
     # final data frame
     if(is.null(data))
@@ -59,17 +62,22 @@ dataloader <- function(length_x = 10, length_y = 8, steps = 2, data = NULL){
     lats <<- getindices(max_lat, inc, FALSE)     
     
     # Set the default number of columns and rows to process
+    # to the full number of lons and lats
     numcols <<- length(lons)
     numrows <<- length(lats)    
   }
   
   
   # Set the number of grid rows to process
-  setnumrows <- function(x) numrows <<- x + 2
+  setnumrows <- function(x) numrows <<- x 
   
   
   # Set the number of grid columns to process
-  setnumcols <- function(x) numcols <<- x + 2
+  setnumcols <- function(x) numcols <<- x 
+  
+  
+  # Set flag to only print loading console logs (downloads data if FALSE)
+  setprint <- function(x) print <<- x
   
 
   # Return the list of x-axis values
@@ -86,7 +94,7 @@ dataloader <- function(length_x = 10, length_y = 8, steps = 2, data = NULL){
   
   # Get the number of grid rows to process
   getnumrows <- function() return (numrows)
-    
+  
   
   # Return the loaded data
   getdata <- function() return (data)
@@ -95,28 +103,94 @@ dataloader <- function(length_x = 10, length_y = 8, steps = 2, data = NULL){
   # Return the bounding box (from set() method)
   getbbox <- function() return (c(lons[1], lats[1], -lats[1], -lons[1]))
   
+  
+  # Return the current subset bounding box being processed
+  getbboxcurrent <- function() return (temp_bbox)
+  
+  
+  # Get object settings
+  getsettings <- function(){
+    return(
+      data.frame(
+        cols_to_process = numcols,
+        rows_to_process = numrows,
+        steps = steps,
+        print = print,
+        bbox = toString(c(lons[1], lats[1], -lats[1], -lons[1])),
+        bbox_current = toString(temp_bbox)
+      )
+    )
+  }  
+  
+  
+  # Export data to CSV
+  export <- function(){
+    if(!is.null(data) & print == FALSE){
+      write.csv(data, file = "data.csv")
+    }
+    else{
+      print('Cannot export data')
+    }
+  }
+  
 
   # Load global daily weather data inside each incremental bounding box
-  load <- function(){
+  # @param parametrs: a list() of equal-numbered items per row
+  load <- function(parameters = list()){
     # Initial bounding box (upper left region)
-    bbox <- c(-175, 85, -175, 90)
-    #bbox <- c(-180, 85, -175, 90)
+    # bbox <- c(-175, 85, -175, 90)
     
-    # testing bounds
-    ttbox <- c(-10, 8, -8, 10)
-    ttbox
-    
-    for(i in 2:(numrows - 1)){
-      echo <- ''
-      
-      for(j in 2:(numcols - 1)){
-        echo <- (paste0(echo, '[', lats[i], ',', lons[j], ']'))
-        print(c(lons[j], lats[i], -lats[i], -lons[j]))
+    for(i in 1:(numrows)){
+      for(j in 1:(numcols)){
+        # Current bounding box window
+        x1 <- lons[j]
+        y1 <- lats[i]
+        x2 <- lons[j]
+        y2 <- lats[i]
         
+        # Compute the bounding box window
+        if(y1 < 0){
+          y1 <- y1 - (-inc)
+        }
+        else{
+          y1 <- y1 - inc
+        }
         
+        if(x2 < 0){
+          x2 <- x2 - (-inc)
+        }
+        else{
+          x2 <- x2 - inc
+        }        
+        
+        # Set the current bounding box window to process
+        temp_bbox <<- c(x1, y1, x2, y2)
+        print(paste('col', j, toString(temp_bbox)))
+        
+        # Call to the NASA POWER API to download specified data
+        for(k in 1:length(parameters)){
+          print(paste("--processing", toString(params[[k]]), "at cell [", i, '][', j, ']', toString(temp_bbox)))
+          
+          if(print == TRUE)
+            break          
+          
+          daily_region_ag <- get_power(community = "AG",
+            lonlat = temp_bbox, 
+            pars = params[[k]],
+            dates = c("1985-01-01", "1985-01-02"),
+            temporal_average = "DAILY") 
+          
+          # Initialize the empty data frame
+          if(nrow(data) == 0){
+            data <<- rbind(data, daily_region_ag)
+          }
+          else{
+            # Append variable columns to the existing data
+            # Variable parameters start at index no. 8 and above 
+            data <<- cbind(data, daily_region_ag[, c(8:length(daily_region_ag))])
+          }
+        }
       }
-      
-      print(echo)
     }    
   }
   
@@ -126,13 +200,17 @@ dataloader <- function(length_x = 10, length_y = 8, steps = 2, data = NULL){
     set = set,
     setnumrows = setnumrows,
     setnumcols = setnumcols,
+    setprint = setprint,
     getx = getx,
     gety = gety,
     getbbox = getbbox,
+    getbboxcurrent = getbboxcurrent,
     getnumrows = getnumrows,
     getnumcols = getnumcols,
     getdata = getdata,
-    load = load    
+    getsettings = getsettings,
+    load = load,
+    export = export
   ))
 }
 
@@ -142,8 +220,8 @@ dataloader <- function(length_x = 10, length_y = 8, steps = 2, data = NULL){
 ## -----------------------------------------------------------------
 
 
-# Returns a formatted list of vectors into a list of vectors with
-# equal number of elements in each group
+# Returns a formatted list() of vectors into a list() of vectors with
+# equal number of items in each group/category
 # @param itemslist: a list() of vectors; variables[[1]] = c(), [[2]] = c(), ...
 # @param: maxItems: number of items to contain in each list() inside the masterlist
 formatinput <- function(itemslist, maxItems = 3){
@@ -157,12 +235,10 @@ formatinput <- function(itemslist, maxItems = 3){
   for(i in 1:length(itemslist)){
     for(j in 1:length(itemslist[[i]])){
       if(col_inc <= max){
-        print(paste('Encode normal', itemslist[[i]][j], col_inc, j))
         # Encode item into a temporary vector list
         temp[col_inc] <- itemslist[[i]][j]
         
         if(col_inc == max){
-          print(paste('--keep', temp))
           # Encode the temporary vector list into the master list
           masterlist[[row_inc]] <- temp
           
@@ -178,9 +254,9 @@ formatinput <- function(itemslist, maxItems = 3){
           col_inc <- col_inc + 1
           
           # Encode the temporary vector list into the master list
-          # if there are less items than @max
+          # if there are less items than @max and there are no more
+          # rows to process
           if(j == length(itemslist[[i]]) & length(temp) > 0 & i == length(itemslist)){
-            print(paste('--KEEP!', temp))
             masterlist[[row_inc]] <- temp
             
             temp <- c()

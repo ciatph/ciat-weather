@@ -3,3 +3,4 @@
 *.json
 *.nc
 /data/nasa-power/*.nc
+*.csv
