@@ -8,7 +8,7 @@
 
 
 ## Libraries and dependencies
-source("lib/usepackage.R")
+source("usepackage.R")
 usepackage('nasapower')
 
 
