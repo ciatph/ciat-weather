@@ -34,6 +34,7 @@ dataloader <- function(length_x = 10, length_y = 8, steps = 2, data = NULL){
   
   
   # Set the downloader's internal settings' values
+  # Automatically sets the bounding box (bbox) from given @length_x and length_y
   # @param length_x: length of (positive) side of the x axis
   # @param length_y: length of (positive) side of the y axis
   # @param steps: interval values to increment/decrement the length_x and length_y
@@ -90,6 +91,10 @@ dataloader <- function(length_x = 10, length_y = 8, steps = 2, data = NULL){
   # Return the loaded data
   getdata <- function() return (data)
   
+  
+  # Return the bounding box (from set() method)
+  getbbox <- function() return (c(lons[1], lats[1], -lats[1], -lons[1]))
+  
 
   # Load global daily weather data inside each incremental bounding box
   load <- function(){
@@ -123,9 +128,69 @@ dataloader <- function(length_x = 10, length_y = 8, steps = 2, data = NULL){
     setnumcols = setnumcols,
     getx = getx,
     gety = gety,
+    getbbox = getbbox,
     getnumrows = getnumrows,
     getnumcols = getnumcols,
     getdata = getdata,
     load = load    
   ))
+}
+
+
+##
+## Supplementary functions
+## -----------------------------------------------------------------
+
+
+# Returns a formatted list of vectors into a list of vectors with
+# equal number of elements in each group
+# @param itemslist: a list() of vectors; variables[[1]] = c(), [[2]] = c(), ...
+# @param: maxItems: number of items to contain in each list() inside the masterlist
+formatinput <- function(itemslist, maxItems = 3){
+  masterlist <- list()
+  row_inc <- 1
+  col_inc <- 1
+  max <- maxItems
+  
+  temp <- c()
+  
+  for(i in 1:length(itemslist)){
+    for(j in 1:length(itemslist[[i]])){
+      if(col_inc <= max){
+        print(paste('Encode normal', itemslist[[i]][j], col_inc, j))
+        # Encode item into a temporary vector list
+        temp[col_inc] <- itemslist[[i]][j]
+        
+        if(col_inc == max){
+          print(paste('--keep', temp))
+          # Encode the temporary vector list into the master list
+          masterlist[[row_inc]] <- temp
+          
+          # Reset tempoary containers and counters
+          temp <- c()
+          col_inc <- 1
+          
+          # Increment row counter
+          row_inc <- row_inc + 1
+        }
+        else{
+          # Increment column counter
+          col_inc <- col_inc + 1
+          
+          # Encode the temporary vector list into the master list
+          # if there are less items than @max
+          if(j == length(itemslist[[i]]) & length(temp) > 0 & i == length(itemslist)){
+            print(paste('--KEEP!', temp))
+            masterlist[[row_inc]] <- temp
+            
+            temp <- c()
+            col_inc <- 1
+            row_inc <- row_inc + 1
+          }          
+        }
+      }
+    }
+  }
+  
+  return (masterlist)
 }
