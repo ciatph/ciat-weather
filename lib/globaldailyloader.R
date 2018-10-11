@@ -15,6 +15,16 @@ usepackage('nasapower')
 
 
 # Object for downloading Daily Global weather data 
+# Internal global variables (set during object creation and processing):
+#   @param max_lon: maximum x-axis 
+#   @param max_lat: maximum y-axis 
+#   @param steps: number of steps to increment/decrement the x and y axis values
+#   @param lons: list of x-axis values, inremented by @steps
+#   @param lats: list of y-axis values, inremented by @steps
+#   @param temp_bbox: global (whole) bounding box
+#   @param bbox: current (sub) bounding box being processed
+#   @param print: flag to skip downloading. Prints only console logs
+#   @param data: merged data from all grid cells
 # Usage: d <- dataloader()
 #        d$set(10, 8, 2)
 #        d$load()
