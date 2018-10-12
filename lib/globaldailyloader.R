@@ -160,17 +160,17 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
         
         # Compute the bounding box window
         if(y1 < 0){
-          y1 <- y1 - (-inc)
+          y1 <- y1 - (-steps)
         }
         else{
-          y1 <- y1 - inc
+          y1 <- y1 - steps
         }
         
         if(x2 < 0){
-          x2 <- x2 - (-inc)
+          x2 <- x2 - (-steps)
         }
         else{
-          x2 <- x2 - inc
+          x2 <- x2 - steps
         }        
         
         # Set the current bounding box window to process
