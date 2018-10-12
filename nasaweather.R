@@ -36,6 +36,7 @@ variables[[2]] <- c(
 variables[[3]] <- c(
   "WD10M",
   "WD50M"
+  #"WS2M"
 #  "WS10M"
 )
 
@@ -49,13 +50,13 @@ d <- dataloader()
 d$set(180, 90, 3)
 
 # Optional: Set number of grid cell to process
-d$setnumcols(2)
-d$setnumrows(2)
-# d$setprint(TRUE)
+d$setnumcols(1)
+#d$setnumrows(2)
+d$setprint(TRUE)
 
 # Load weather parameters
 d$load(params)
 
 # Export data to CSV
-d$export()
+# d$export()
 

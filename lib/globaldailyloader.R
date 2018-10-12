@@ -30,7 +30,7 @@ usepackage('nasapower')
 #        d$load()
 dataloader <- function(max_lon = 10, max_lat = 8, steps = 2, 
                        lons = c(), lats = c(), numcols = 0, numlats = 0,
-                       bbox = c(), temp_bbox = c(), print = FALSE, data = NULL){
+                       bbox = c(), temp_bbox = c(), print = FALSE, data = NULL, log = ''){
 
   # Get the incremental indices from +/- max (start) to +/- max (end)
   # max: maximum start/end
@@ -89,6 +89,12 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
   # Set flag to only print loading console logs (downloads data if FALSE)
   setprint <- function(x) print <<- x
   
+  
+  # Set the log output
+  setlog <- function(x){
+    log <<- x
+  }
+  
 
   # Return the list of x-axis values
   getx <- function() return (lons)
@@ -116,6 +122,10 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
   
   # Return the current subset bounding box being processed
   getbboxcurrent <- function() return (temp_bbox)
+  
+  
+  # Get the current logs
+  getlog <- function() return (log)
   
   
   # Get object settings
@@ -152,8 +162,9 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
     
     # Initialize row data container
     temp_row <- data.frame()     
+    echolog <- ''
+    l <- list()
     
-
     for(i in 1:(numrows)){
       temp_col <- data.frame()
      
@@ -181,12 +192,13 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
         
         # Set the current bounding box window to process
         temp_bbox <<- c(x1, y1, x2, y2)
+        l[[length(l) + 1]] <- temp_bbox
         print(paste('col', j, toString(temp_bbox)))
         
         # Call to the NASA POWER API to download specified data
         for(k in 1:length(parameters)){
           print(paste("--processing", toString(params[[k]]), "at cell [", i, '][', j, ']', toString(temp_bbox)))
-          
+
           # Do no process data download
           if(print == TRUE)
             break          
@@ -196,6 +208,8 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
             pars = params[[k]],
             dates = c("1985-01-01", "1985-01-02"),
             temporal_average = "DAILY") 
+          
+          print(paste('>>> length', nrow(daily_region_ag)))
           
           # Initialize the empty data frame
           if(nrow(temp_col) == 0){
@@ -209,11 +223,13 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
         }
       }
       
-      print(paste('--ENCODING ROW #', i))
+      print(paste('-->> ENCODING ROW #', i))
       temp_row <- rbind(temp_row, temp_col)
     }    
     
     data <<- temp_row
+    log <<- l
+    close(fileConn)
   }
   
   
@@ -230,6 +246,7 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
     getnumrows = getnumrows,
     getnumcols = getnumcols,
     getdata = getdata,
+    getlog = getlog,
     getsettings = getsettings,
     load = load,
     export = export
