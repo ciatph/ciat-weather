@@ -150,7 +150,13 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
     # Initial bounding box (upper left region)
     # bbox <- c(-175, 85, -175, 90)
     
+    # Initialize row data container
+    temp_row <- data.frame()     
+    
+
     for(i in 1:(numrows)){
+      temp_col <- data.frame()
+     
       for(j in 1:(numcols)){
         # Current bounding box window
         x1 <- lons[j]
@@ -181,6 +187,7 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
         for(k in 1:length(parameters)){
           print(paste("--processing", toString(params[[k]]), "at cell [", i, '][', j, ']', toString(temp_bbox)))
           
+          # Do no process data download
           if(print == TRUE)
             break          
           
@@ -191,17 +198,22 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
             temporal_average = "DAILY") 
           
           # Initialize the empty data frame
-          if(nrow(data) == 0){
-            data <<- rbind(data, daily_region_ag)
+          if(nrow(temp_col) == 0){
+            temp_col <- rbind(temp_col, daily_region_ag)
           }
           else{
             # Append variable columns to the existing data
-            # Variable parameters start at index no. 8 and above 
-            data <<- cbind(data, daily_region_ag[, c(8:length(daily_region_ag))])
+            # temp_col parameters start at index no. 8 and above 
+            temp_col <- cbind(temp_col, daily_region_ag[, c(8:length(daily_region_ag))])
           }
         }
       }
+      
+      print(paste('--ENCODING ROW #', i))
+      temp_row <- rbind(temp_row, temp_col)
     }    
+    
+    data <<- temp_row
   }
   
   

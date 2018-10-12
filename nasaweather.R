@@ -20,8 +20,8 @@ variables[[1]] <- c(
 variables[[2]] <- c(
   "T2MDEW",
   "T2M_MAX",
-  "T2M_MIN",
-   "T2M" 
+  "T2M_MIN"
+  #"T2M" 
 )
 
 # weather variable: wind speed
@@ -35,8 +35,8 @@ variables[[2]] <- c(
 # "WS2M" #x
 variables[[3]] <- c(
   "WD10M",
-  "WD50M",
-  "WS10M"
+  "WD50M"
+#  "WS10M"
 )
 
 # Append weather variables into (1) long list() with equal no. of items
@@ -50,7 +50,7 @@ d$set(180, 90, 3)
 
 # Optional: Set number of grid cell to process
 d$setnumcols(2)
-d$setnumrows(1)
+d$setnumrows(2)
 # d$setprint(TRUE)
 
 # Load weather parameters
