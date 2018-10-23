@@ -191,7 +191,7 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
   # Export data to CSV
   export <- function(){
     if(!is.null(data) & print == FALSE){
-      write.csv(data, file = "data.csv")
+      write.csv(data, file = paste0(getwd(), "/data.csv"))
     }
     else{
       print('Cannot export data')
