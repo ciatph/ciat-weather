@@ -29,6 +29,7 @@ usepackage('nasapower')
 #        d$set(10, 8, 2)
 #        d$load()
 dataloader <- function(max_lon = 10, max_lat = 8, steps = 2, 
+                       start_lon = 1, start_lat = 1,
                        lons = c(), lats = c(), numcols = 0, numlats = 0,
                        bbox = c(), temp_bbox = c(), print = FALSE, data = NULL, log = ''){
 
@@ -86,6 +87,18 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
   setnumcols <- function(x) numcols <<- x 
   
   
+  # Set y-index on which to start row (latitude)
+  setstarty <- function(x) {
+    start_lat <<- x 
+  }
+  
+  
+  # Set x-index on which to start column (longitude)
+  setstartx <- function(x) {
+    start_lon <<- x
+  }  
+  
+  
   # Set flag to only print loading console logs (downloads data if FALSE)
   setprint <- function(x) print <<- x
   
@@ -110,6 +123,14 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
   
   # Get the number of grid rows to process
   getnumrows <- function() return (numrows)
+  
+  
+  # Get the starting x-coordinate
+  getstartx <- function() return (start_lon)
+  
+  
+  # Get the starting y-coordinate 
+  getstarty <- function() return (start_lat)
   
   
   # Return the loaded data
@@ -165,10 +186,12 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
     echolog <- ''
     l <- list()
     
-    for(i in 1:(numrows)){
+    # latitudes
+    for(i in start_lat:((start_lat + numrows) - 1)){
       temp_col <- data.frame()
      
-      for(j in 1:(numcols)){
+      # longitudes
+      for(j in start_lon:((start_lon + numcols) - 1)){
         # Current bounding box window
         x1 <- lons[j]
         y1 <- lats[i]
@@ -188,12 +211,17 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
         }
         else{
           x2 <- x2 - steps
-        }        
+        }     
+        
+        
+        # TO-DO: error on x-traversal from 0 to positive
+        print(paste('***X1', x1, 'at index', j))
+        
         
         # Set the current bounding box window to process
         temp_bbox <<- c(x1, y1, x2, y2)
         l[[length(l) + 1]] <- temp_bbox
-        print(paste('col', j, toString(temp_bbox)))
+        print(paste('col', j, ', row', i, ' :: ', toString(temp_bbox)))
         
         # Call to the NASA POWER API to download specified data
         for(k in 1:length(parameters)){
@@ -223,13 +251,12 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
         }
       }
       
-      print(paste('-->> ENCODING ROW #', i))
+      print(paste('::::::>> ENCODING ROW #', i))
       temp_row <- rbind(temp_row, temp_col)
     }    
     
     data <<- temp_row
     log <<- l
-    close(fileConn)
   }
   
   
@@ -238,6 +265,8 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
     set = set,
     setnumrows = setnumrows,
     setnumcols = setnumcols,
+    setstarty = setstarty,
+    setstartx = setstartx,
     setprint = setprint,
     getx = getx,
     gety = gety,
@@ -245,6 +274,8 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
     getbboxcurrent = getbboxcurrent,
     getnumrows = getnumrows,
     getnumcols = getnumcols,
+    getstartx = getstartx,
+    getstarty = getstarty,
     getdata = getdata,
     getlog = getlog,
     getsettings = getsettings,
