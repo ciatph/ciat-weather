@@ -396,7 +396,9 @@ formatinput <- function(itemslist, maxItems = 3){
 }
 
 
-# Get the number of days in a month
+# Returns the number of days in a month for a given formatted as.Date()
+# @param date: Date object
+# @usage: numberofdays(as.Date("2018-11-05", "%Y-%m-%d"))
 numberofdays <- function(date) {
   m <- format(date, format="%m")
   
