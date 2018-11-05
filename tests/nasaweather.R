@@ -36,11 +36,11 @@ variables[[1]] <- c(
 #variables[[2]] <- c(
 #  "WD10M",
 #  "WD50M"
-  # NA "WS2M"
-  # NA "WS10M"
+# NA "WS2M"
+# NA "WS10M"
 #)
 
-# Append weather variables into (1) long list() with equal no. of items
+## Append weather variables into (1) long list() with equal no. of items
 params <- formatinput(variables, 3)
 
 # Initialize the data loader object
@@ -49,22 +49,27 @@ d <- dataloader()
 # Set global bounding box (world map's bounding box)
 d$set(180, 90, 4) #4.8
 
-# Optional: Set number of grid cell to process
+## Optional: Set number of grid cell to process
 d$setnumcols(3)
 d$setnumrows(2)
 
-# Set TRUE if we only want to see the printed bounding boxes
-# Does not download data if set to TRUE
-# d$setprint(TRUE)
+## Set the starting and ending year
+d$setdate(2014, 2014)
 
-# Optional: set column and row index to start
+## Optional: Set the number of days in a month to process
+d$setnumdays(1)
+
+## Set TRUE if we only want to see the printed bounding boxes
+## Does not download data if set to TRUE
+#d$setprint(TRUE)
+
+## Optional: set column and row index to start
 # d$setstartx(length(d$getx()) - 3)
 # d$setstarty(length(d$gety()) - 3)
 # d$setstartx(match(c(-4), d$getx()))
 
-# Load weather parameters
-d$load(params)
+## Load weather parameters
+#d$load(params)
 
-# Export data to CSV
-d$export()
-
+## Export data to CSV
+#d$export()
