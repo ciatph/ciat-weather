@@ -21,6 +21,10 @@ usepackage('nasapower')
 #   @param steps: number of steps to increment/decrement the x and y axis values
 #   @param lons: list of x-axis values, inremented by @steps
 #   @param lats: list of y-axis values, inremented by @steps
+#   @param numcols: number of x-axis columns (longitude)
+#   @param numlats: number of y-axis rows (latitude)
+#   @param datelist: a vector list of inclusive dates of format "YYYY-MM-DD" to query
+#   @param numdays: number of days to process from the @datelist
 #   @param temp_bbox: global (whole) bounding box
 #   @param bbox: current (sub) bounding box being processed
 #   @param print: flag to skip downloading. Prints only console logs
@@ -31,6 +35,7 @@ usepackage('nasapower')
 dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
                        start_lon = 1, start_lat = 1,
                        lons = c(), lats = c(), numcols = 0, numlats = 0,
+                       datelist = c(), numdays = 365,
                        bbox = c(), temp_bbox = c(), print = FALSE, data = NULL, log = ''){
 
   # Get the incremental indices from +/- max (start) to +/- max (end)
@@ -132,6 +137,39 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
     log <<- x
   }
 
+  # Set the dates to query
+  setdate <- function(startYear, endYear) {
+    
+    temp <- c()
+    index <- 1
+    
+    for(i in startYear:endYear) {
+      # Get the month
+      for(j in 1:12) {
+        
+        # Get the number of days in a month
+        startDate <- paste0(i, '-', j, '-', '1')
+        numdays <- numberofdays(as.Date(startDate, "%Y-%m-%d"))
+        
+        for(k in 1:numdays) {
+          date <- paste0(i, '-', j, '-', k)
+          temp[index] <- date
+          index <- index + 1
+        }
+      }      
+    }
+    
+    print(length(temp))
+    datelist <<- temp
+    numdays <<- length(datelist)
+  }
+  
+  
+  # Set the number of days to to query
+  setnumdays <- function(x) {
+    numdays <<- x  
+  }
+  
 
   # Return the list of x-axis values
   getx <- function() return (lons)
@@ -171,6 +209,14 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
 
   # Get the current logs
   getlog <- function() return (log)
+  
+  
+  # Get the inclusive dates for query
+  getdates <- function() return(dates)
+  
+  
+  # Get the number of days
+  getnumdays <- function() return(numdays)
 
 
   # Get object settings
@@ -186,7 +232,7 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
       )
     )
   }
-
+  
 
   # Export data to CSV
   export <- function(){
@@ -238,7 +284,8 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
           daily_region_ag <- get_power(community = "AG",
                                        lonlat = temp_bbox,
                                        pars = params[[k]],
-                                       dates = c("1985-01-01", "1985-01-02"),
+                                       # dates = c("1985-01-01", "1985-01-02"),
+                                       dates = datelist[1:numdays],
                                        temporal_average = "DAILY")
           
           print(paste('>>> length', nrow(daily_region_ag)))
@@ -272,6 +319,8 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
     setstarty = setstarty,
     setstartx = setstartx,
     setprint = setprint,
+    setdate = setdate,
+    setnumdays = setnumdays,
     getx = getx,
     gety = gety,
     getbbox = getbbox,
@@ -282,6 +331,7 @@ dataloader <- function(max_lon = 10, max_lat = 8, steps = 2,
     getstarty = getstarty,
     getdata = getdata,
     getlog = getlog,
+    getdates = getdates,
     getsettings = getsettings,
     load = load,
     export = export
@@ -343,4 +393,16 @@ formatinput <- function(itemslist, maxItems = 3){
   }
 
   return (masterlist)
+}
+
+
+# Get the number of days in a month
+numberofdays <- function(date) {
+  m <- format(date, format="%m")
+  
+  while (format(date, format="%m") == m) {
+    date <- date + 1
+  }
+  
+  return(as.integer(format(date - 1, format="%d")))    
 }
